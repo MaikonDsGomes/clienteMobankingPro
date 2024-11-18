@@ -15,7 +15,7 @@ import time
 
 #Configuração dos inserts, ou seja, vamos criar uma máquina com id 10 e inserir na empresa 1
 
-idEmpresa = 3
+idEmpresa = 1
 idMaquina = 0  
 breakMsgSlackCpu = 0
 breakMsgSlackRam = 0
@@ -237,7 +237,7 @@ def capturar_dados_pro():
     servicoCpu = 1
     servicoRam = 2
     servicoHd = 3
-    hd = p.disk_usage('C:\\')
+    hd = p.disk_usage('/')
     hd = hd[1] / (1024 ** 3)  # Converter para GB
     hd = round(hd, 0)
     
